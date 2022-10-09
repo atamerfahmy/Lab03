@@ -9,5 +9,24 @@
             "id": "4aaeaab844ab11ed9297d4548b902ab7"
         }
     ],
-    "projects": []
+    "projects": [
+        {
+            "title": "as",
+            "details": "as",
+            "total_target": "13",
+            "start_date": "1-10-2020",
+            "end_date": "2-10-2020",
+            "id": "543d48aa47d111edadacd4548b902ab7",
+            "user_id": "4aaeaab844ab11ed9297d4548b902ab7"
+        },
+        {
+            "title": "ast",
+            "details": "asr",
+            "total_target": "14",
+            "start_date": "1-10-2020",
+            "end_date": "3-10-2020",
+            "id": "7431312d47d511edaf6ed4548b902ab7",
+            "user_id": "4aaeaab844ab11ed9297d4548b902ab7"
+        }
+    ]
 }

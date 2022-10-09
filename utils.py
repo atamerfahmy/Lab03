@@ -66,19 +66,23 @@ def read_registration_data():
 def read_date():
     format = "%d-%m-%Y"
 
-    start_date = input("Enter your start date: [dd-mm-yyyy]")
+    start_date = input("Enter your start date: [dd-mm-yyyy] ")
     try:
         bool(datetime.strptime(start_date, format))
     except ValueError:
         print("Invalid format!\nTry again")
         return read_date()
 
-    end_date = input("Enter your end date: ")
+    end_date = input("Enter your end date: [dd-mm-yyyy] ")
     try:
         bool(datetime.strptime(end_date, format))
     except ValueError:
         print("Invalid format!\nTry again")
         return read_date()
+    else:
+        if start_date > end_date:
+            print("End date should be after the start date.\nTry again")
+            return read_date()
 
     return start_date, end_date
 
